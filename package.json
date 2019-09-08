@@ -1,7 +1,7 @@
 {
   "name": "etec-presentation-webapp",
   "version": "1.0.0",
-  "description": "A webapp example for etec presentation",
+  "description": "A project example to etec presentation",
   "author": "Cinthia Queiroz Henrique Rufino Igor Pastoreli",
   "private": true,
   "scripts": {

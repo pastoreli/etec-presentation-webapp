@@ -1,6 +1,6 @@
 # etec-presentation-webapp
 
-> A webapp example for etec presentation
+> A project example to etec presentation
 
 ## Build Setup
 
