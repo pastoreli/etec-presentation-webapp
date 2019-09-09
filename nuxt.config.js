@@ -5,6 +5,9 @@ export default {
   /*
   ** Headers of the page
   */
+  env: {
+    API_URL: process.env.API_URL
+  },
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
@@ -30,17 +33,25 @@ export default {
   ** Global CSS
   */
   css: [
+    {
+      src: '~/assets/scss/main.scss'
+    }
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {
+      src: '~/plugins/pet-components',
+      ssr: false
+    },
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/axios'
   ],
   /*
   ** vuetify module configuration
