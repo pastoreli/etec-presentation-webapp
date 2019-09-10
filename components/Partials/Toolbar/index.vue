@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar class="pet-header">
+  <v-toolbar color="transparent" class="pet-header">
     <v-toolbar-items>
       <v-btn flat>Adotar um amiguinho</v-btn>
       <v-btn 

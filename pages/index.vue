@@ -1,7 +1,10 @@
 <template>
   <v-container class="page">
-    <h2 class="align-center-text">Animais cadastrados</h2>
-    <h4 class="align-center-text">Esses são os animais cadastrados em nosso site. Encontre um amigo perfeito para você:</h4>
+    <div class="align-center-text">
+      <img src="@/assets/img/icon.png" />
+    </div>
+    <h2 class="align-center-text pet-primary--text pet-text-h4">Animais cadastrados</h2>
+    <h4 class="align-center-text font-weight-regular pet-text-h6">Esses são os animais cadastrados em nosso site. Encontre um amigo perfeito para você:</h4>
     <v-layout
       row
       wrap

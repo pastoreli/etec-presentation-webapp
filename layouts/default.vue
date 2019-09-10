@@ -1,8 +1,10 @@
 <template>
   <v-app class="pet-app">
     <toolbar @shareFriend="showDialog = true" />
+    <banner />
     <v-content class="page">
       <nuxt />
+      <footer-first />
       <dialog-default 
         v-model="showDialog">
         <register-pet 
@@ -16,12 +18,15 @@
 <script>
 import { Toolbar } from  '@/components/Partials';
 import RegisterPet from '@/components/RegisterPet';
+import { FooterFirst, Banner } from '@/components/Main';
 
 import { APIPets } from '@/API/endpoints';
 export default {
   components: {
     Toolbar,
-    RegisterPet
+    RegisterPet,
+    FooterFirst,
+    Banner
   },
   data: () => ({
     showDialog: false
@@ -31,6 +36,7 @@ export default {
       await APIPets.registerPet(pet)
       .then(res => {
         console.log('pet', res);
+        this.showDialog = false;
         this.$nuxt.$emit('setNewPet', pet);
       })
       .catch(error => {
